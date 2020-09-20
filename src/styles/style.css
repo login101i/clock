@@ -39,6 +39,8 @@ body {
   width: 100%;
   -webkit-transform: scale(-1);
           transform: scale(-1);
+  -webkit-animation: animation 1s ease-in-out;
+          animation: animation 1s ease-in-out;
 }
 
 .clock:after {
@@ -199,6 +201,44 @@ body {
     z-index: 1;
     border-radius: 50%;
     border: 5px solid white;
+  }
+}
+
+@-webkit-keyframes animation {
+  0% {
+    opacity: 0;
+    scale: 0.7;
+  }
+  50% {
+    opacity: 0;
+    scale: 0.7;
+  }
+  70% {
+    opacity: 0;
+    scale: 1.1;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+    scale: 0.7;
+  }
+  50% {
+    opacity: 0;
+    scale: 0.7;
+  }
+  70% {
+    opacity: 0;
+    scale: 1.1;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
